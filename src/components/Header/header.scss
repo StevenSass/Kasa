@@ -1,0 +1,45 @@
+@mixin media-max($_max-width) {
+  @media screen and (max-width: $_max-width) {
+    &{ @content; }
+  }
+}
+
+.header {
+    display: flex;
+    height: 68px;
+    padding: 2vw 4vw 2vw 4vw;
+
+    @include media-max(650px) {
+      padding: 10px 20px 10px 20px;
+    }
+    &__logo {
+      width: 26vw;
+      margin-right: auto;
+      object-fit: scale-down;
+    }
+    &__link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 5vw;
+      & a {
+        height: 34px;
+        font-family: Montserrat;
+        font-size: 32px;
+        font-weight: 500;
+        line-height: 34px;
+        letter-spacing: 0em;
+        text-align: right;
+        color: #FF6060;
+        text-decoration: none;
+
+        @include media-max(850px) {
+          font-size: 4vw;
+        }
+        &:hover {
+          animation: 1ms;
+          text-decoration: underline;
+        }
+      }
+    }
+  }

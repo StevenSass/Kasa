@@ -1,0 +1,25 @@
+.footer {
+   margin-top: 20px;
+   background-color: black;   
+   height: 210px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 10px;
+   &__img {
+   margin-top: 60px;
+   width: 122px;
+   height: 40px;
+   object-fit: cover;
+   }
+   &__text {
+   font-family: Montserrat;
+   font-size: 24px;
+   font-weight: 500;
+   line-height: 34px;
+   letter-spacing: 0em;
+   text-align: center;
+   color: white;
+   }
+}
