@@ -10,9 +10,11 @@ import BannerImg from "./components/BannerImg/bannerimg"
 import Location from "./components/Location/location"
 import LocationFunction from "./components/Location/locationFunction"
 import Dropdown from "./components/Dropdown/dropdown"
+import DropdownFunction from "./components/Dropdown/dropdownFunction"
 import Error from "./components/Error/error"
 
 import data from "./datas/annonce.json"
+import dataAPropos from "./datas/apropos.json"
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
@@ -23,7 +25,7 @@ root.render(
       <Routes>
         <Route path="/" element={<><BannerImg /> <LocationFunction i={data} /></>} />
         <Route path="*" element={<Error/>} />
-        <Route path="/apropos" element={<Dropdown />} />
+        <Route path="/apropos" element={<DropdownFunction i={dataAPropos} />} />
       </Routes>
       <Footer/>
     </Router>

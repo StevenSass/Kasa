@@ -1,4 +1,4 @@
-function Location({ title, cover}) {
+function Location({title, cover}) {
     return (
         <a href="">
             <article className="locationSection__article">
