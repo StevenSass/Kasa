@@ -38,7 +38,12 @@
         &__button {
             width: 30px;
             height: 30px;
-            
+            animation: rotationReverse 0.3s ease-in-out forwards;
+            &--rotate {
+                width: 30px;
+                height: 30px;
+                animation: rotation 0.3s ease-in-out forwards;
+            }
         }
     }
 
@@ -62,5 +67,25 @@
                 color: #FF6060;
             }
         }
+    }
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes rotationReverse {
+    from {
+        transform: rotate(180deg);
+    }
+
+    to {
+        transform: rotate(0deg);
     }
 }

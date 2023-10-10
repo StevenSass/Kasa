@@ -14,9 +14,9 @@ function Dropdown({title, text}) {
         <div className="dropdown--div">
             <div className="dropdown__hotbar">
                 <p className="dropdown__hotbar__title">{title}</p>
-                <img onClick={toggle} className="dropdown__hotbar__button" src={Arrow} alt="" />
+                <img onClick={toggle} className={!open ? "dropdown__hotbar__button" : "dropdown__hotbar__button--rotate"} src={Arrow} alt="" />
             </div>
-            {open && <div className="dropdown__info">
+            {open && <div className={!open ? "dropdown__info--close" : "dropdown__info"}>
                 <ul className="dropdown__info__list">
                     <li>{text}</li>
                 </ul>

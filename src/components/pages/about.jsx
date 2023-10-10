@@ -1,7 +1,7 @@
-import Dropdown from "./dropdown"
+import Dropdown from "../Dropdown/dropdown"
 
-function DropdownFunction(dataAPropos) {
-    const donnee = dataAPropos.i
+function About(dataAbout) {
+    const donnee = dataAbout.i
     
    
     return (
@@ -17,4 +17,4 @@ function DropdownFunction(dataAPropos) {
     )
 }
 
-export default DropdownFunction
+export default About
