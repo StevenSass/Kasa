@@ -7,15 +7,17 @@
 .header {
     display: flex;
     height: 68px;
-    padding: 2vw 4vw 2vw 4vw;
+    padding: 10px 20px 10px 20px;
 
     @include media-max(650px) {
       padding: 10px 20px 10px 20px;
     }
     &__logo {
-      width: 26vw;
       margin-right: auto;
       object-fit: scale-down;
+      @include media-max(850px) {
+        width: 26vw;
+      }
     }
     &__link {
       display: flex;

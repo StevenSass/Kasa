@@ -10,6 +10,14 @@
 
 @import "./components/Error/error.scss";
 
-@import "./components/Logement/logement.scss";
+@import "./components/Carousel/carousel.scss";
 
-@import "./components/About/about.scss";
+@import "./components/pages/logements/logement.scss";
+
+@import "./components/Tags/tags.scss";
+
+@import "./components/Profile/profile.scss";
+
+@import "./components/Ratings/ratings.scss";
+
+@import "./components/pages/about/about.scss"

@@ -4,15 +4,15 @@
   justify-content: center;
   align-items: center;
   gap: 20px;
+  overflow: hidden;
 }
 .dropdown--div {
   display: flex;
   flex-direction: column;
-  align-items: center;
   width: 100%;
+  overflow: hidden;
 }
 .dropdown__hotbar {
-  width: 80%;
   z-index: 2;
   background-color: #FF6060;
   border-radius: 10px;
@@ -49,7 +49,7 @@
   margin-top: -10px;
   border-radius: 10px;
   padding: 10px 20px 10px 20px;
-  width: 80%;
+  animation: dropdown 0.3s linear forwards;
 }
 .dropdown__info__list {
   margin-top: 20px;
@@ -80,5 +80,13 @@
   }
   to {
     transform: rotate(0deg);
+  }
+}
+@keyframes dropdown {
+  from {
+    translate: 0px -180px;
+  }
+  to {
+    translate: 0px 0px;
   }
 }

@@ -1,0 +1,75 @@
+@mixin media-min($_min-width) {
+    @media screen and (min-width: $_min-width) {
+      &{ @content; }
+    }
+  }
+
+@mixin media-max($_max-width) {
+    @media screen and (max-width: $_max-width) {
+      &{ @content; }
+    }
+  }
+
+.carousel {
+    position: relative;
+    height: 400px;
+    margin: 10px 20px 10px 20px;
+    border-radius: 10px;
+
+    @include media-max(660px) {
+        margin: 10px 20px 10px 20px;
+      }
+    &__imgBack {
+        border-radius: 10px;
+        width: 100%;
+        position: absolute;
+        z-index: 1;
+        height: 400px;
+        object-fit: cover;
+    }
+
+    &__arrow {
+        z-index: 2;
+        position: absolute;
+        top: 140px;
+        @include media-max(660px) {
+            top: 40%;
+            width: 80px;
+          }
+
+          @include media-max(400px) {
+            top: 40%;
+            width: 60px;
+          }
+        &--left {
+            left: 10px;
+
+            @include media-max(400px) {
+                left: 0px;
+              }
+        }
+
+        &--right {
+            right: 10px;
+
+            @include media-max(400px) {
+                right: 0px;
+              }
+        }
+    }
+
+    &__text {
+        font-family: Montserrat;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 26px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: white;
+
+        z-index: 2;
+        position: absolute;
+        top: 85%;
+        left: 47%;
+    }
+}

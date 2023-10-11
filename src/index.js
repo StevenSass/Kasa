@@ -7,11 +7,14 @@ import Header from "./components/Header/header"
 import Footer from "./components/Footer/footer"
 
 import Error from "./components/Error/error"
-import Homepage from './components/pages/homepage'
-import About from './components/pages/about'
+import Homepage from "./components/pages/homepage"
+import About from "./components/pages/about/about"
+import Logement from "./components/pages/logements/logement"
+
 
 import data from "./datas/annonce.json"
 import dataAbout from "./datas/apropos.json"
+
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
@@ -20,9 +23,10 @@ root.render(
     <Router>
       <Header/>
       <Routes>
-        <Route path="/" element={<Homepage i={data} />} />
+        <Route path="/" element={<Homepage data={data} />} />
+        <Route path="/about" element={<About dataAbout={dataAbout} />} />
+        <Route path="/logement/:id" element={<Logement/>} />
         <Route path="*" element={<Error/>} />
-        <Route path="/about" element={<About i={dataAbout} />} />
       </Routes>
       <Footer/>
     </Router>

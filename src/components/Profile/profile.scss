@@ -1,0 +1,26 @@
+.profile {
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 20px 10px 20px;
+    &__text {
+        font-family: Montserrat;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 26px;
+        letter-spacing: 0em;
+        text-align: right;
+        color: #FF6060;
+
+    }
+
+    &__photo {
+        width: 64px;
+        height: 64px;
+        border-radius: 100%;
+        background-color: #C4C4C4;
+    }
+}

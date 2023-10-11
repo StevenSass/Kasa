@@ -1,7 +1,7 @@
 .header {
   display: flex;
   height: 68px;
-  padding: 2vw 4vw 2vw 4vw;
+  padding: 10px 20px 10px 20px;
 }
 @media screen and (max-width: 650px) {
   .header {
@@ -9,9 +9,13 @@
   }
 }
 .header__logo {
-  width: 26vw;
   margin-right: auto;
   object-fit: scale-down;
+}
+@media screen and (max-width: 850px) {
+  .header__logo {
+    width: 26vw;
+  }
 }
 .header__link {
   display: flex;

@@ -1,0 +1,65 @@
+.carousel {
+  position: relative;
+  height: 400px;
+  margin: 10px 20px 10px 20px;
+  border-radius: 10px;
+}
+@media screen and (max-width: 660px) {
+  .carousel {
+    margin: 10px 20px 10px 20px;
+  }
+}
+.carousel__imgBack {
+  border-radius: 10px;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  height: 400px;
+  object-fit: cover;
+}
+.carousel__arrow {
+  z-index: 2;
+  position: absolute;
+  top: 140px;
+}
+@media screen and (max-width: 660px) {
+  .carousel__arrow {
+    top: 40%;
+    width: 80px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .carousel__arrow {
+    top: 40%;
+    width: 60px;
+  }
+}
+.carousel__arrow--left {
+  left: 10px;
+}
+@media screen and (max-width: 400px) {
+  .carousel__arrow--left {
+    left: 0px;
+  }
+}
+.carousel__arrow--right {
+  right: 10px;
+}
+@media screen and (max-width: 400px) {
+  .carousel__arrow--right {
+    right: 0px;
+  }
+}
+.carousel__text {
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: white;
+  z-index: 2;
+  position: absolute;
+  top: 85%;
+  left: 47%;
+}

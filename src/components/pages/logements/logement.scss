@@ -1,0 +1,94 @@
+@mixin media-max($_max-width) {
+    @media screen and (max-width: $_max-width) {
+      &{ @content; }
+    }
+  }
+
+
+.logement {
+    &__title {
+        margin: 10px 20px 10px 20px;
+        font-family: Montserrat;
+        font-size: 36px;
+        font-weight: 500;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #FF6060;
+    }
+
+    &__text {
+        margin: 10px 20px 10px 20px;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-weight: 500;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #FF6060;
+
+    }
+
+    &__tagList {
+        flex-wrap: wrap;
+        gap: 10px;
+        list-style: none;
+        margin: 10px 20px 10px 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: center;
+        padding: 0px;
+    }
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-areas: 
+    "itemInfo itemInfo itemInfo itemProfile"
+    "itemInfo itemInfo itemInfo itemRating";
+
+        @include media-max(600px) {
+            grid-template-areas: 
+            "itemInfo itemInfo itemInfo itemInfo"
+            "itemRating itemRating itemRating itemProfile";
+        }
+    .gridItemInfo {
+        grid-area: itemInfo;
+        justify-self: flex-start;
+        @include media-max(600px) {
+
+          }
+    }
+
+    .gridItemProfile {
+        grid-area: itemProfile;
+        justify-self: flex-end;
+        @include media-max(600px) {
+        
+          }
+    }
+
+    .gridItemRating {
+        grid-area: itemRating;
+        justify-self: flex-end;
+        align-self: center;
+
+        @include media-max(600px) {
+            justify-self: flex-start;
+            position: inherit;
+          }
+    }
+}
+
+.dropdownSection {
+    padding: 10px 20px 10px 20px;
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+    align-self: flex-start;
+    @include media-max(600px) {
+        flex-direction: column;
+      }
+}

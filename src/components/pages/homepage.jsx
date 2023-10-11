@@ -1,17 +1,19 @@
 import Location from "../Location/location"
 import BannerImg  from "../BannerImg/bannerimg"
+import image from "../../images/IMGpaysage.png"
 
-function Homepage (data) {
-    const donnee = data.i
 
-    return (
+function Homepage ({data}) {
+    return (       
         <>
-            <BannerImg />
+            <BannerImg images={image}/>
             
             <div className="locationSection">
-                {donnee.map((location) => (
+                {data.map((location) => (
+                    
                     <Location
                         key={location.id}
+                        id={location.id}
                         cover={location.cover}
                         title={location.title}
                     />

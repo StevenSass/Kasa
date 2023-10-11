@@ -1,7 +1,7 @@
 .locationSection {
   background-color: #F6F6F6;
-  margin: 2vw 4vw 2vw 4vw;
-  padding: 2vw 4vw 2vw 4vw;
+  margin: 10px 20px 10px 20px;
+  padding: 10px 20px 10px 20px;
   border-radius: 20px;
   display: flex;
   flex-direction: row;
@@ -80,6 +80,6 @@
     width: 210px;
     height: 50px;
     overflow-wrap: break-word;
-    overflow: scroll;
+    overflow: hidden;
   }
 }
