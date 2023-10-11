@@ -14,7 +14,7 @@ function Logement () {
 
     if (!idData) {
         return <Navigate to="/404Error" />
-      }
+    }
     return (
         <div className="logement">
             <Carousel
