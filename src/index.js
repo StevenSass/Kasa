@@ -7,7 +7,7 @@ import Header from "./components/Header/header"
 import Footer from "./components/Footer/footer"
 
 import Error from "./components/Error/error"
-import Homepage from "./components/pages/homepage"
+import Homepage from "./components/pages/homepage/homepage"
 import About from "./components/pages/about/about"
 import Logement from "./components/pages/logements/logement"
 

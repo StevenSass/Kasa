@@ -1,6 +1,6 @@
-import Location from "../Location/location"
-import BannerImg  from "../BannerImg/bannerimg"
-import image from "../../images/IMGpaysage.png"
+import Location from "../../Location/location"
+import BannerImg  from "../../BannerImg/bannerimg"
+import image from "../../../images/IMGpaysage.png"
 
 
 function Homepage ({data}) {

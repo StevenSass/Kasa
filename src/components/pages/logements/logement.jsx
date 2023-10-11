@@ -1,4 +1,4 @@
-import {useParams } from "react-router-dom";
+import {useNavigate, useParams, Navigate } from "react-router-dom";
 import data from "../../../datas/annonce.json"
 import Carousel from "../../Carousel/carousel";
 import Dropdown from "../../Dropdown/dropdown";
@@ -6,11 +6,15 @@ import Tags from "../../Tags/tags"
 import Profile from "../../Profile/profile";
 import Ratings from "../../Ratings/ratings";
 
-const number = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
-
 function Logement () {
     const {id} = useParams();
+    const navigate = useNavigate()
     const idData = data.find((element) => element.id === id)
+    console.log(idData);
+
+    if (!idData) {
+        return <Navigate to="/404Error" />
+      }
     return (
         <div className="logement">
             <Carousel
@@ -59,7 +63,9 @@ function Logement () {
             </div>
             
         </div>
+        
     )
+    
 }
 
 export default Logement
