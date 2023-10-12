@@ -12,7 +12,7 @@
 
 .locationSection {
     background-color: #F6F6F6;
-    margin: 10px 20px 10px 20px;
+    margin: 20px 40px 20px 40px;
     padding: 10px 20px 10px 20px;
     border-radius: 20px;
     display: flex;
@@ -37,8 +37,8 @@
           }
 
         @include media-min(1300px) {
-          width: 400px;
-          height: 400px;
+          width: 430px;
+          height: 430px;
         }
     }
     &__article {
@@ -52,8 +52,8 @@
             height: 230px;
           }
         @include media-min(1300px) {
-          width: 400px;
-          height: 400px;
+          width: 430px;
+          height: 430px;
         }
         &__picture {
             position: absolute;
@@ -67,8 +67,8 @@
               }
 
             @include media-min(1300px) {
-              width: 400px;
-              height: 400px;
+              width: 430px;
+              height: 430px;
             }
         }
         &__overlay {
@@ -84,8 +84,8 @@
                 height: 230px;
               }
             @include media-min(1300px) {
-              width: 400px;
-              height: 400px;
+              width: 430px;
+              height: 430px;
             }
             
         }
@@ -112,8 +112,8 @@
                 overflow:hidden;
               }
             @include media-min(1300px) {
-              left: 10px;
-              top: 320px;
+              left: 15px;
+              top: 350px;
               width: 375px;
               height: 50px;
             }

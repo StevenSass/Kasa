@@ -6,7 +6,10 @@ import image from "../../../images/IMGpaysage.png"
 function Homepage ({data}) {
     return (       
         <>
-            <BannerImg images={image}/>
+            <BannerImg
+                text="Chez vous, partout et ailleurs"
+                images={image}
+            />
             
             <div className="locationSection">
                 {data.map((location) => (

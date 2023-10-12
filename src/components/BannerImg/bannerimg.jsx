@@ -1,10 +1,10 @@
 
 
-function BannerImg({images}) {
+function BannerImg({images, text}) {
     return (
         <div className="bannerImg">
             <img src={images} alt="paysage.png" className="bannerImg__image"></img>
-            <h1 className="bannerImg__text">Chez vous, partout et ailleurs</h1>
+            <h1 className="bannerImg__text">{text}</h1>
         </div>
     )
 }

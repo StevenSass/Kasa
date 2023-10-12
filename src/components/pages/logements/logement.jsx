@@ -1,19 +1,18 @@
 import {useNavigate, useParams, Navigate } from "react-router-dom";
-import data from "../../../datas/annonce.json"
 import Carousel from "../../Carousel/carousel";
 import Dropdown from "../../Dropdown/dropdown";
 import Tags from "../../Tags/tags"
 import Profile from "../../Profile/profile";
 import Ratings from "../../Ratings/ratings";
+import Error from "../../Error/error";
 
-function Logement () {
+function Logement ({data}) {
     const {id} = useParams();
-    const navigate = useNavigate()
     const idData = data.find((element) => element.id === id)
     console.log(idData);
 
     if (!idData) {
-        return <Navigate to="/404Error" />
+        return <Error/>
     }
     return (
         <div className="logement">
