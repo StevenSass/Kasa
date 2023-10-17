@@ -23,3 +23,8 @@
 @import "./components/pages/about/about.scss";
 
 @import "./components/pages/homepage/homepage.scss";
+
+.wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+}

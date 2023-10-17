@@ -20,10 +20,7 @@
     flex-wrap: wrap;
     
     justify-content: center;
-    gap: 1vw;
-    @include media-min(1300px) {
-      gap: 2vw;
-    }
+    gap: 3vw;
 
     & a {
         text-decoration: none;
@@ -35,11 +32,6 @@
             width: 230px;
             height: 230px;
           }
-
-        @include media-min(1300px) {
-          width: 430px;
-          height: 430px;
-        }
     }
     &__article {
         position: absolute;
@@ -51,10 +43,6 @@
             width: 230px;
             height: 230px;
           }
-        @include media-min(1300px) {
-          width: 430px;
-          height: 430px;
-        }
         &__picture {
             position: absolute;
             width: 340px;
@@ -65,11 +53,6 @@
                 width: 230px;
                 height: 230px;
               }
-
-            @include media-min(1300px) {
-              width: 430px;
-              height: 430px;
-            }
         }
         &__overlay {
             z-index: 1;
@@ -83,10 +66,6 @@
                 width: 230px;
                 height: 230px;
               }
-            @include media-min(1300px) {
-              width: 430px;
-              height: 430px;
-            }
             
         }
         &__title {
@@ -111,12 +90,6 @@
                 overflow-wrap: break-word;
                 overflow:hidden;
               }
-            @include media-min(1300px) {
-              left: 15px;
-              top: 350px;
-              width: 375px;
-              height: 50px;
-            }
         }
     }
 }

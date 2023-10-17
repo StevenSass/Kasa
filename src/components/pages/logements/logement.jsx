@@ -15,53 +15,55 @@ function Logement ({data}) {
         return <Error/>
     }
     return (
-        <div className="logement">
-            <Carousel
-                key={Math.random()}
-                image={idData.pictures}
-            />
-            <div className="gridContainer">
-                <div className="gridItemInfo">
-                    <h2 className="logement__title">{idData.title}</h2>
-                    <p className="logement__text">{idData.location}</p>
+        <div className="wrapper">
+            <div className="logement">
+                <Carousel
+                    key={Math.random()}
+                    image={idData.pictures}
+                />
+                <div className="gridContainer">
+                    <div className="gridItemInfo">
+                        <h2 className="logement__title">{idData.title}</h2>
+                        <p className="logement__text">{idData.location}</p>
 
-                    <ul key={Math.random()} className="logement__tagList">
-                        {idData.tags.map((tagsList) => 
-                            <Tags
-                            key={Math.random()}
-                            Text={tagsList}
-                            />
-                        )}
-                    </ul>
+                        <ul key={Math.random()} className="logement__tagList">
+                            {idData.tags.map((tagsList) => 
+                                <Tags
+                                key={Math.random()}
+                                Text={tagsList}
+                                />
+                            )}
+                        </ul>
+                    </div>
+                    <div className="gridItemProfile">
+                        <Profile
+                            key={id + "Profile"}
+                            profileName={idData.host.name}
+                            profilePhoto={idData.host.picture}
+                        />
+                    </div>
+                    <div className="gridItemRating">
+                        <Ratings
+                            key={id + "Rating"}
+                            ratings={idData.rating}
+                        />
+                    </div>
                 </div>
-                <div className="gridItemProfile">
-                    <Profile
-                        key={id + "Profile"}
-                        profileName={idData.host.name}
-                        profilePhoto={idData.host.picture}
+                <div className="dropdownSection">
+                    <Dropdown 
+                        key={id + "Description"}
+                        text={idData.description}
+                        title="Description"
                     />
-                </div>
-                <div className="gridItemRating">
-                    <Ratings
-                        key={id + "Rating"}
-                        ratings={idData.rating}
+                    <Dropdown 
+                        key={id + "Equipement"}
+                        text={idData.equipments}
+                        title="Equipement"
                     />
                 </div>
             </div>
-            <div className="dropdownSection">
-                <Dropdown 
-                    key={id + "Description"}
-                    text={idData.description}
-                    title="Description"
-                />
-                <Dropdown 
-                    key={id + "Equipement"}
-                    text={idData.equipments}
-                    title="Equipement"
-                />
-            </div>
-            
         </div>
+        
         
     )
     

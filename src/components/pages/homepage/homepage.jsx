@@ -5,11 +5,11 @@ import image from "../../../images/IMGpaysage.png"
 
 function Homepage ({data}) {
     return (       
-        <>
+        <div className="wrapper">
             <BannerImg
                 images={image}
             >
-                <h1 className="bannerImg__text">qzdqzdqzd</h1>
+                <h1 className="bannerImg__text">Chez vous, partout et ailleurs</h1>
             </BannerImg>
             
             <div className="locationSection">
@@ -23,7 +23,7 @@ function Homepage ({data}) {
                     />
                 ))}
             </div>
-        </>
+        </div>
     )
 }
 

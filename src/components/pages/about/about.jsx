@@ -4,7 +4,7 @@ import Image from "../../../images/Image source 2.png"
 
 function About({dataAbout}) {   
     return (
-        <div>
+        <div className="wrapper">
             <BannerImg
                 key={"bannerImg - 4986"}
                 images={Image}
