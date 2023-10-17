@@ -12,8 +12,8 @@ function Carousel({image}) {
     return (
         <div className="carousel">
             <img className="carousel__imgBack" src={image[count]} alt="Images de fond du carousel" />
-            <img onClick={() => setCount(count - 1) } className="carousel__arrow carousel__arrow--left" src={LeftArrow} alt="Left Arrow" />
-            <img onClick={() => setCount(count + 1) } className="carousel__arrow carousel__arrow--right" src={RightArrow} alt="Right Arrow" />
+            <img onClick={() => setCount(count - 1)} className="carousel__arrow carousel__arrow--left" src={LeftArrow} alt="Left Arrow" />
+            <img onClick={() => setCount(count + 1)} className="carousel__arrow carousel__arrow--right" src={RightArrow} alt="Right Arrow" />
             <p className="carousel__text">{count + 1}/{image.length}</p>
         </div>
     )

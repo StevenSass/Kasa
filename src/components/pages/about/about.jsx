@@ -8,7 +8,7 @@ function About({dataAbout}) {
             <BannerImg
                 key={"bannerImg - 4986"}
                 images={Image}
-                text="Chez vous, partout et ailleurs"
+                
             />
             <div className="margin-dropdown">
                 <div className="dropdown ">

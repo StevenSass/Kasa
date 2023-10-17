@@ -7,9 +7,10 @@ function Homepage ({data}) {
     return (       
         <>
             <BannerImg
-                text="Chez vous, partout et ailleurs"
                 images={image}
-            />
+            >
+                <h1 className="bannerImg__text">qzdqzdqzd</h1>
+            </BannerImg>
             
             <div className="locationSection">
                 {data.map((location) => (
