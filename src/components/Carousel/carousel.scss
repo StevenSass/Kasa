@@ -19,6 +19,9 @@
     @include media-max(660px) {
         margin: 10px 20px 10px 20px;
       }
+    @include media-max(800px) {
+      height: 230px;
+    }
     &__imgBack {
         border-radius: 10px;
         width: 100%;
@@ -26,6 +29,9 @@
         z-index: 1;
         height: 400px;
         object-fit: cover;
+        @include media-max(800px) {
+          height: 230px;
+        }
     }
 
     &__arrow {
@@ -38,24 +44,32 @@
             width: 80px;
           }
 
-          @include media-max(400px) {
+          @include media-max(800px) {
             top: 40%;
             width: 60px;
           }
         &--left {
             left: 10px;
 
-            @include media-max(400px) {
+            @include media-max(800px) {
                 left: 0px;
+                width: 60px;
               }
+            @include media-max(550px) {
+              width: 40px;
+            }
         }
 
         &--right {
             right: 10px;
 
-            @include media-max(400px) {
+            @include media-max(800px) {
                 right: 0px;
+                width: 60px;
               }
+            @include media-max(550px) {
+              width: 40px;
+            }
         }
     }
 
@@ -72,5 +86,8 @@
         position: absolute;
         top: 85%;
         left: 47%;
+        @include media-max(800px) {
+          display: none;
+        }
     }
 }

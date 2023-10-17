@@ -9,6 +9,11 @@
     margin: 10px 20px 10px 20px;
   }
 }
+@media screen and (max-width: 800px) {
+  .carousel {
+    height: 230px;
+  }
+}
 .carousel__imgBack {
   border-radius: 10px;
   width: 100%;
@@ -16,6 +21,11 @@
   z-index: 1;
   height: 400px;
   object-fit: cover;
+}
+@media screen and (max-width: 800px) {
+  .carousel__imgBack {
+    height: 230px;
+  }
 }
 .carousel__arrow {
   cursor: pointer;
@@ -29,7 +39,7 @@
     width: 80px;
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 800px) {
   .carousel__arrow {
     top: 40%;
     width: 60px;
@@ -38,17 +48,29 @@
 .carousel__arrow--left {
   left: 10px;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 800px) {
   .carousel__arrow--left {
     left: 0px;
+    width: 60px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .carousel__arrow--left {
+    width: 40px;
   }
 }
 .carousel__arrow--right {
   right: 10px;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 800px) {
   .carousel__arrow--right {
     right: 0px;
+    width: 60px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .carousel__arrow--right {
+    width: 40px;
   }
 }
 .carousel__text {
@@ -63,4 +85,9 @@
   position: absolute;
   top: 85%;
   left: 47%;
+}
+@media screen and (max-width: 800px) {
+  .carousel__text {
+    display: none;
+  }
 }
