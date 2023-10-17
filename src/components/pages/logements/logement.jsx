@@ -1,4 +1,4 @@
-import {useNavigate, useParams, Navigate } from "react-router-dom";
+import {useParams} from "react-router-dom";
 import Carousel from "../../Carousel/carousel";
 import Dropdown from "../../Dropdown/dropdown";
 import Tags from "../../Tags/tags"
