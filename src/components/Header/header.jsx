@@ -5,7 +5,7 @@ function Header() {
   return (
     <div className="wrapper">
       <section className="header">
-        <Link className="header__logo" to="/">
+        <Link className="header__logo" to="/Projet-8/">
           <img src={Logo} alt="logo.png" className="header__logo"></img>
         </Link>
         <div className="header__link">
