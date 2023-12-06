@@ -1,18 +1,20 @@
-import { Link } from "react-router-dom"
-import Logo from "../../images/LOGO.png"
+import { Link } from "react-router-dom";
+import Logo from "../../images/LOGO.png";
 
 function Header() {
-    return (
-        <div className="wrapper">
-            <section className="header">
-            <Link className="header__logo" to="/"><img src={Logo} alt="logo.png" className="header__logo"></img></Link>
-            <div className="header__link">
-                <Link to="/">Accueil</Link>
-                <Link to="/about">A Propos</Link>
-            </div>
-            </section>
+  return (
+    <div className="wrapper">
+      <section className="header">
+        <Link className="header__logo" to="/">
+          <img src={Logo} alt="logo.png" className="header__logo"></img>
+        </Link>
+        <div className="header__link">
+          <Link to="/Projet-8/">Accueil</Link>
+          <Link to="/Projet-8/about">A Propos</Link>
         </div>
-    )
+      </section>
+    </div>
+  );
 }
 
-export default Header
+export default Header;

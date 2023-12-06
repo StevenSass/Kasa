@@ -23,10 +23,10 @@ root.render(
     <Router>
       <Header/>
       <Routes>
-        <Route path="/" element={<Homepage data={data} />} />
-        <Route path="/about" element={<About dataAbout={dataAbout} />} />
-        <Route path="/logement/:id" element={<Logement data={data} />} />
-        <Route path="*" element={<Error/>} />
+        <Route path="/Projet-8/" element={<Homepage data={data} />} />
+        <Route path="/Projet-8/about" element={<About dataAbout={dataAbout} />} />
+        <Route path="/Projet-8/logement/:id" element={<Logement data={data} />} />
+        <Route path="/Projet-8/*" element={<Error/>} />
       </Routes>
       <Footer/>
     </Router>
