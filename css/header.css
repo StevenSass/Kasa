@@ -1,0 +1,44 @@
+.header {
+  display: flex;
+  padding: 20px 40px 20px 40px;
+}
+@media screen and (max-width: 650px) {
+  .header {
+    padding: 10px 20px 10px 20px;
+  }
+}
+.header__logo {
+  margin-right: auto;
+  object-fit: scale-down;
+}
+@media screen and (max-width: 850px) {
+  .header__logo {
+    width: 26vw;
+  }
+}
+.header__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5vw;
+}
+.header__link a {
+  height: 34px;
+  font-family: Montserrat;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 34px;
+  letter-spacing: 0em;
+  text-align: right;
+  color: #FF6060;
+  text-decoration: none;
+}
+@media screen and (max-width: 850px) {
+  .header__link a {
+    font-size: 4vw;
+  }
+}
+.header__link a:hover {
+  animation: 1ms;
+  text-decoration: underline;
+}
